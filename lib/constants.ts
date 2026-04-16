@@ -2,7 +2,6 @@ import type {
   NavItem,
   StatItem,
   WhyItem,
-  GalleryImage,
   Review,
   ContactItem,
   FaqItem,
@@ -20,50 +19,40 @@ export const USE_LOCAL_IMAGES = false;
 // IMAGES
 // ---------------------------------------------------------------------------
 export const IMAGES: ImageMap = {
-  hero: USE_LOCAL_IMAGES
-    ? '/images/hero.webp'
-    : 'https://images.unsplash.com/photo-1625047509252-ab38fb5c7343?w=1600&q=80',
-  about: USE_LOCAL_IMAGES
-    ? '/images/about.webp'
-    : 'https://images.unsplash.com/photo-1606577924006-27d39b132ae2?w=800&q=80',
-  gallery: USE_LOCAL_IMAGES
-    ? [
-        '/images/gallery/01.webp',
-        '/images/gallery/02.webp',
-        '/images/gallery/03.webp',
-        '/images/gallery/04.webp',
-        '/images/gallery/05.webp',
-      ]
-    : [
-        'https://images.unsplash.com/photo-1586768702658-caf8a84e8b8e?w=800&q=80',
-        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-        'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80',
-        'https://images.unsplash.com/photo-1611566026373-c6c8da0ea861?w=800&q=80',
-        'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80',
-      ],
+  hero: 'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319618437.webp',
+  about: 'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319618861.webp',
+  gallery: [
+    'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319618437.webp',
+    'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319618861.webp',
+    'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319619295.webp',
+    'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319619255.webp',
+    'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319619374.webp',
+    'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319620873.webp',
+    'https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319619557.webp',
+  ],
 };
 
 // ---------------------------------------------------------------------------
 // NAVIGATION
 // ---------------------------------------------------------------------------
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Domov', href: '#hero' },
-  { label: 'Služby', href: '#services' },
-  { label: 'Prečo my', href: '#why-us' },
-  { label: 'Galéria', href: '#gallery' },
-  { label: 'Recenzie', href: '#reviews' },
-  { label: 'Rezervácia', href: '#booking' },
-  { label: 'Kontakt', href: '#contact' },
+  { label: 'Home', href: '#hero' },
+  { label: 'Services', href: '#services' },
+  { label: 'Why Us', href: '#why-us' },
+  { label: 'Gallery', href: '#gallery' },
+  { label: 'Reviews', href: '#reviews' },
+  { label: 'Book', href: '#booking' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 // ---------------------------------------------------------------------------
 // STATS
 // ---------------------------------------------------------------------------
 export const STATS: StatItem[] = [
-  { value: '15+', label: 'Rokov skúseností' },
-  { value: '5000+', label: 'Spokojných zákazníkov' },
-  { value: '98%', label: 'Spokojnosť' },
-  { value: '24h', label: 'Expresné opravy' },
+  { value: '10+', label: 'Years of experience' },
+  { value: '3000+', label: 'Happy clients' },
+  { value: '98%', label: 'Satisfaction rate' },
+  { value: '12mo', label: 'Work guarantee' },
 ];
 
 // ---------------------------------------------------------------------------
@@ -73,26 +62,26 @@ export const WHY_ITEMS: WhyItem[] = [
   {
     id: '1',
     icon: '🔧',
-    title: 'Skúsení mechanici',
-    description: 'Certifikovaní odborníci s dlhoročnou praxou na všetkých značkách vozidiel.',
+    title: 'Skilled mechanics',
+    description: 'Our team brings years of hands-on experience with all car makes — we treat your car like it\'s our own.',
   },
   {
     id: '2',
     icon: '⚡',
-    title: 'Rýchly servis',
-    description: 'Väčšinu opráv zvládneme do 24 hodín. Expresné opravy na počkanie.',
+    title: 'Fast turnaround',
+    description: 'Most jobs are done same day. We respect your time and keep you updated every step of the way.',
   },
   {
     id: '3',
     icon: '💰',
-    title: 'Férové ceny',
-    description: 'Transparentná cenová politika bez skrytých poplatkov. Cenová ponuka zadarmo.',
+    title: 'Fair, honest pricing',
+    description: 'No surprises on the invoice. We give you a clear estimate upfront and stick to it.',
   },
   {
     id: '4',
     icon: '🛡️',
-    title: 'Záruka na prácu',
-    description: 'Na všetky opravy poskytujeme 12-mesačnú záruku. Vaša spokojnosť je priorita.',
+    title: '12-month guarantee',
+    description: 'Every repair comes with a 12-month warranty. We stand behind our work — always.',
   },
 ];
 
@@ -102,82 +91,121 @@ export const WHY_ITEMS: WhyItem[] = [
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     id: 'diagnostics',
-    name: 'Diagnostika',
+    name: 'Diagnostics',
     items: [
       {
         id: 'd1',
-        name: 'Počítačová diagnostika',
-        description: 'Kompletná diagnostika elektroniky vozidla',
-        price: 'od 30 €',
+        name: 'Computer diagnostics',
+        description: 'Full electronic scan of your vehicle — we find the issue before it finds you.',
+        price: 'from 30 €',
         icon: '💻',
       },
       {
         id: 'd2',
-        name: 'Geometria kolies',
-        description: 'Nastavenie geometrie náprav pomocou 3D zariadenia',
-        price: 'od 40 €',
+        name: 'Wheel alignment',
+        description: '3D precision alignment to keep your car tracking straight and your tyres lasting longer.',
+        price: 'from 40 €',
         icon: '📐',
       },
-      {
-        id: 'd3',
-        name: 'Kontrola pred kúpou',
-        description: 'Detailná prehliadka vozidla pred nákupom',
-        price: 'od 60 €',
-        icon: '🔍',
-      },
     ],
   },
   {
-    id: 'repairs',
-    name: 'Opravy',
+    id: 'oil-service',
+    name: 'Oil / Service',
     items: [
       {
-        id: 'r1',
-        name: 'Oprava motora',
-        description: 'Generálna oprava, výmena tesnenia, remont',
-        price: 'od 200 €',
-        icon: '🔩',
-      },
-      {
-        id: 'r2',
-        name: 'Oprava prevodovky',
-        description: 'Manuálne aj automatické prevodovky',
-        price: 'od 150 €',
-        icon: '⚙️',
-      },
-      {
-        id: 'r3',
-        name: 'Oprava bŕzd',
-        description: 'Výmena platničiek, diskov, brzdových strmeňov',
-        price: 'od 50 €',
-        icon: '🛑',
-      },
-    ],
-  },
-  {
-    id: 'maintenance',
-    name: 'Údržba',
-    items: [
-      {
-        id: 'm1',
-        name: 'Výmena oleja',
-        description: 'Motorový olej + filter, reset servisného intervalu',
-        price: 'od 35 €',
+        id: 'o1',
+        name: 'Oil change',
+        description: 'Engine oil + filter replacement with service interval reset. Quick, clean, done right.',
+        price: 'from 35 €',
         icon: '🛢️',
       },
       {
-        id: 'm2',
-        name: 'Výmena pneumatík',
-        description: 'Prezutie, vyváženie, uskladnenie pneumatík',
-        price: 'od 10 €/kus',
+        id: 'o2',
+        name: 'Full service',
+        description: 'Comprehensive maintenance check — filters, fluids, belts and everything in between.',
+        price: 'from 80 €',
+        icon: '🔩',
+      },
+    ],
+  },
+  {
+    id: 'tires',
+    name: 'Tires',
+    items: [
+      {
+        id: 't1',
+        name: 'Tyre change & balancing',
+        description: 'Seasonal swap, balancing and storage — we\'ll have you rolling safely in no time.',
+        price: 'from 10 € / tyre',
         icon: '🔄',
       },
       {
-        id: 'm3',
-        name: 'Klimatizácia',
-        description: 'Plnenie, dezinfekcia, oprava klimatizácie',
-        price: 'od 45 €',
-        icon: '❄️',
+        id: 't2',
+        name: 'Tyre repair',
+        description: 'Puncture? We\'ll patch it up fast so you can get back on the road without the hassle.',
+        price: 'from 15 €',
+        icon: '🛞',
+      },
+    ],
+  },
+  {
+    id: 'bodywork',
+    name: 'Bodywork',
+    items: [
+      {
+        id: 'b1',
+        name: 'Dent & scratch repair',
+        description: 'We restore your car\'s look with care — small dents or deeper scratches, we handle it all.',
+        price: 'from 50 €',
+        icon: '🎨',
+      },
+      {
+        id: 'b2',
+        name: 'Body panel work',
+        description: 'Panel replacement and repair done with precision — your car will look like new again.',
+        price: 'on request',
+        icon: '🔨',
+      },
+    ],
+  },
+  {
+    id: 'electrical',
+    name: 'Electrical',
+    items: [
+      {
+        id: 'e1',
+        name: 'Electrical diagnostics',
+        description: 'From warning lights to wiring issues — we track down electrical gremlins quickly.',
+        price: 'from 40 €',
+        icon: '⚡',
+      },
+      {
+        id: 'e2',
+        name: 'Battery & starter service',
+        description: 'Battery check, replacement, starter and alternator repair. No power? We\'ve got you.',
+        price: 'from 30 €',
+        icon: '🔋',
+      },
+    ],
+  },
+  {
+    id: 'hard-job',
+    name: 'Hard job',
+    items: [
+      {
+        id: 'h1',
+        name: 'Engine overhaul',
+        description: 'Big job? No problem. Engine rebuild, head gasket, full remont — we take on the tough stuff.',
+        price: 'from 200 €',
+        icon: '⚙️',
+      },
+      {
+        id: 'h2',
+        name: 'Gearbox repair',
+        description: 'Manual or automatic — gearbox issues don\'t scare us. We\'ll get your transmission singing again.',
+        price: 'from 150 €',
+        icon: '🔩',
       },
     ],
   },
@@ -188,60 +216,27 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
 // ---------------------------------------------------------------------------
 export const SCHEDULE: DaySchedule[] = [
   {
-    day: 'Pondelok',
+    day: 'Monday',
     entries: [
-      { time: '08:00', name: 'Ranný servis', instructor: 'Martin K.' },
-      { time: '10:00', name: 'Diagnostika', instructor: 'Jozef P.' },
-      { time: '14:00', name: 'Odpoludňajší servis', instructor: 'Martin K.' },
+      { time: '09:00', name: 'Morning service', instructor: 'Alex' },
+      { time: '11:00', name: 'Diagnostics', instructor: 'Serhiy' },
+      { time: '14:00', name: 'Afternoon service', instructor: 'Alex' },
     ],
   },
   {
-    day: 'Utorok',
+    day: 'Tuesday',
     entries: [
-      { time: '08:00', name: 'Oprava bŕzd', instructor: 'Jozef P.' },
-      { time: '11:00', name: 'Výmena oleja', instructor: 'Peter S.' },
-      { time: '15:00', name: 'Geometria', instructor: 'Martin K.' },
-    ],
-  },
-  {
-    day: 'Streda',
-    entries: [
-      { time: '08:00', name: 'Ranný servis', instructor: 'Peter S.' },
-      { time: '12:00', name: 'Klimatizácia', instructor: 'Jozef P.' },
-      { time: '16:00', name: 'Expresný servis', instructor: 'Martin K.' },
+      { time: '09:00', name: 'Brake repair', instructor: 'Serhiy' },
+      { time: '11:00', name: 'Oil change', instructor: 'Dmytro' },
+      { time: '15:00', name: 'Alignment', instructor: 'Alex' },
     ],
   },
 ];
 
 // ---------------------------------------------------------------------------
-// MENU CATEGORIES (templateType: 'menu')
+// MENU CATEGORIES (templateType: 'menu') — not used
 // ---------------------------------------------------------------------------
-export const MENU_CATEGORIES: MenuCategory[] = [
-  {
-    id: 'starters',
-    name: 'Predjedlá',
-    items: [
-      { id: 's1', name: 'Cesnaková polievka', description: 'Tradičná slovenská cesnaková polievka s krutónmi', price: '4,50 €' },
-      { id: 's2', name: 'Šalát Caesar', description: 'Rímsky šalát, parmezán, krutóny, Caesar dresing', price: '6,90 €' },
-    ],
-  },
-  {
-    id: 'mains',
-    name: 'Hlavné jedlá',
-    items: [
-      { id: 'm1', name: 'Svíčková na smotane', description: 'Hovädzí sviečok, smotanová omáčka, knedľa', price: '13,90 €' },
-      { id: 'm2', name: 'Grilovaný losos', description: 'Atlantický losos, zelenina, citronové maslo', price: '15,50 €' },
-    ],
-  },
-  {
-    id: 'drinks',
-    name: 'Nápoje',
-    items: [
-      { id: 'd1', name: 'Domáca limonáda', description: 'Čerstvá limonáda s mätou alebo jahodami', price: '3,20 €' },
-      { id: 'd2', name: 'Espresso', description: 'Dvojitý taliansky espresso', price: '1,80 €' },
-    ],
-  },
-];
+export const MENU_CATEGORIES: MenuCategory[] = [];
 
 // ---------------------------------------------------------------------------
 // REVIEWS
@@ -249,35 +244,35 @@ export const MENU_CATEGORIES: MenuCategory[] = [
 export const REVIEWS: Review[] = [
   {
     id: '1',
-    name: 'Michal Horváth',
+    name: 'Michael T.',
     initial: 'M',
-    text: 'Skvelý servis! Auto opravili za jeden deň a cena bola veľmi férová. Určite sa vrátim.',
+    text: 'Brought my car in for an oil change and left feeling genuinely cared for. The team at Viking is friendly, fast and fair. Already booked my next visit!',
     rating: 5,
-    detail: 'Výmena spojky, Škoda Octavia',
+    detail: 'Oil change, Volkswagen Golf',
   },
   {
     id: '2',
-    name: 'Jana Kováčová',
-    initial: 'J',
-    text: 'Profesionálny prístup, priateľský personál. Diagnostiku urobili rýchlo a presne. Odporúčam!',
+    name: 'Anna K.',
+    initial: 'A',
+    text: 'Had a tricky electrical issue that two other garages couldn\'t fix. Viking found it in under an hour. Honest, professional and really kind people.',
     rating: 5,
-    detail: 'Diagnostika, Volkswagen Golf',
+    detail: 'Electrical diagnostics, Toyota RAV4',
   },
   {
     id: '3',
-    name: 'Tomáš Novák',
-    initial: 'T',
-    text: 'Prezutie pneumatík vykonali za 30 minút. Cena rozumná, práca kvalitná. Budem chodiť pravidelne.',
+    name: 'David R.',
+    initial: 'D',
+    text: 'Tyre swap done in 30 minutes while I had a coffee. Clean workshop, great prices and they actually explained what they were doing. Will be back!',
     rating: 5,
-    detail: 'Výmena pneumatík, BMW 3',
+    detail: 'Tyre change, BMW 3 Series',
   },
   {
     id: '4',
-    name: 'Lucia Szabóová',
-    initial: 'L',
-    text: 'Kontrola pred kúpou ojazdenia mi ušetrila veľa starostí. Odhalili skryté závady. Ďakujem!',
+    name: 'Sarah M.',
+    initial: 'S',
+    text: 'Engine overhaul — big job, big worry. But Viking made the whole process so smooth. Regular updates, no hidden costs, and the car runs better than ever.',
     rating: 5,
-    detail: 'Kontrola pred kúpou, Toyota Corolla',
+    detail: 'Engine overhaul, Skoda Octavia',
   },
 ];
 
@@ -287,23 +282,23 @@ export const REVIEWS: Review[] = [
 export const CONTACT_ITEMS: ContactItem[] = [
   {
     icon: '📍',
-    title: 'Adresa',
-    lines: ['Priemyselná 15', '010 01 Žilina'],
+    title: 'Address',
+    lines: ['Korolenko str 16, ap 37'],
   },
   {
     icon: '📞',
-    title: 'Telefón',
-    lines: ['+421 32 123 4567', '+421 903 456 789'],
+    title: 'Phone',
+    lines: ['+380 99 088 3817'],
   },
   {
     icon: '✉️',
     title: 'Email',
-    lines: ['info@autofix.sk', 'servis@autofix.sk'],
+    lines: ['makevytssvadym@gmail.com'],
   },
   {
     icon: '🕐',
-    title: 'Otváracie hodiny',
-    lines: ['Po–Pia: 07:30–17:30', 'So: 08:00–12:00'],
+    title: 'Working hours',
+    lines: ['Mon–Fri: 09:00–19:00', 'Sat–Sun: Closed'],
   },
 ];
 
@@ -313,33 +308,33 @@ export const CONTACT_ITEMS: ContactItem[] = [
 export const FAQ_ITEMS: FaqItem[] = [
   {
     id: '1',
-    question: 'Ako dlho trvá bežná oprava?',
+    question: 'How long does a typical repair take?',
     answer:
-      'Väčšina bežných opráv (výmena oleja, bŕzd, pneumatík) sa vykonáva do 1–2 hodín. Väčšie opravy motora alebo prevodovky môžu trvať 1–3 dni. Presný čas vám povieme pri prevzatí vozidla.',
+      'Most everyday jobs — oil change, brakes, tyres — are done within 1–2 hours. Bigger repairs like engine or gearbox work may take 1–3 days. We\'ll always give you a clear timeframe when you drop off your car.',
   },
   {
     id: '2',
-    question: 'Poskytujete náhradné vozidlo počas opravy?',
+    question: 'Do you work on all car makes and models?',
     answer:
-      'Áno, pri opravách trvajúcich dlhšie ako 1 deň vám poskytneme náhradné vozidlo zdarma. Stačí si to dopredu rezervovať.',
+      'Absolutely — we work on all common European, Japanese and American makes. VW, BMW, Toyota, Mercedes, Ford, Skoda, Hyundai… you name it, we\'ve seen it.',
   },
   {
     id: '3',
-    question: 'Aké platobné metódy akceptujete?',
+    question: 'What payment methods do you accept?',
     answer:
-      'Akceptujeme hotovosť, platobné karty (Visa, Mastercard) aj bankový prevod. Na väčšie opravy je možné dohodnúť splátkový plán.',
+      'We accept cash, Visa/Mastercard and bank transfer. For larger repairs, we\'re happy to discuss a payment plan — just ask us.',
   },
   {
     id: '4',
-    question: 'Opravujete všetky značky áut?',
+    question: 'Is diagnostics charged separately?',
     answer:
-      'Áno, opravujeme všetky bežné európske, japonské aj americké značky. Máme skúsenosti s vozidlami od Škody, VW, BMW, Mercedes, Toyota, Ford a mnohých ďalších.',
+      'Diagnostics starts from 30 €. If you go ahead with the repair at our workshop, we\'ll deduct the diagnostics fee from the total. No double-paying.',
   },
   {
     id: '5',
-    question: 'Je diagnostika spoplatnená?',
+    question: 'How can I book an appointment?',
     answer:
-      'Základná diagnostika je spoplatnená od 30 €. Pri následnom vykonaní opravy u nás vám poplatok za diagnostiku odčítame z celkovej ceny.',
+      'Super easy — fill in the booking form on this page, or just send us a WhatsApp message. We\'ll confirm your slot and make sure everything is ready when you arrive.',
   },
 ];
 
@@ -347,31 +342,31 @@ export const FAQ_ITEMS: FaqItem[] = [
 // CHAT CONFIG
 // ---------------------------------------------------------------------------
 export const CHAT_CONFIG: ChatConfig = {
-  greeting: 'Dobrý deň! Som tu, aby som vám pomohol. Ako vám môžem pomôcť?',
+  greeting: 'Hey there! 👋 Welcome to Viking Auto. How can I help you today?',
   quickReplies: [
     {
       id: '1',
-      label: '📋 Cenník',
+      label: '📋 Pricing',
       response:
-        'Naše ceny začínajú od 30 € za diagnostiku, od 35 € za výmenu oleja a od 50 € za opravu bŕzd. Pre presnú cenovú ponuku nás kontaktujte.',
+        'Our prices start from 30 € for diagnostics, 35 € for an oil change and 10 € per tyre for a seasonal swap. For a precise quote, just message us or fill in the booking form!',
     },
     {
       id: '2',
-      label: '🕐 Otváracie hodiny',
-      response: 'Sme otvorení Po–Pia od 07:30 do 17:30 a v Sobotu od 08:00 do 12:00. V nedeľu zatvorené.',
+      label: '🕐 Working hours',
+      response: 'We\'re open Monday to Friday, 09:00–19:00. Closed on weekends. Need to squeeze in a visit? Drop us a WhatsApp and we\'ll see what we can do.',
     },
     {
       id: '3',
-      label: '📍 Kde sa nachádzate?',
-      response: 'Nájdete nás na adrese Priemyselná 15, 010 01 Žilina. Sme 5 minút od diaľnice D1.',
+      label: '📍 Where are you?',
+      response: 'Find us at Korolenko str 16, ap 37. Easy to reach and with parking right outside.',
     },
     {
       id: '4',
-      label: '📅 Rezervácia',
+      label: '📅 Book a visit',
       response:
-        'Rezerváciu môžete urobiť cez formulár na tejto stránke, telefonicky na +421 32 123 4567 alebo nám napíšte e-mail.',
+        'You can book via the form on this page, send a WhatsApp to +380990883817, or drop us an email. We\'ll get back to you quickly!',
     },
   ],
   fallbackResponse:
-    'Ďakujeme za správu! Pre rýchlejšiu odpoveď nás kontaktujte telefonicky na +421 32 123 4567 alebo e-mailom na info@autofix.sk.',
+    'Thanks for reaching out! For a faster reply, send us a WhatsApp at +380990883817 or email makevytssvadym@gmail.com. Talk soon!',
 };

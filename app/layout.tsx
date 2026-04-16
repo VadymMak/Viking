@@ -30,8 +30,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: SITE_CONFIG.name,
-  description: SITE_CONFIG.tagline,
+  title: 'Viking — Professional Auto Service | Korolenko str 16',
+  description: 'Viking Auto Service — your trusted car care partner in Korolenko str 16. Diagnostics, oil change, tires, bodywork, electrical and more.',
+  openGraph: {
+    title: 'Viking — Professional Auto Service',
+    description: 'Trusted auto service at Korolenko str 16. From oil changes to full engine overhauls — we treat your car like our own.',
+    images: ['https://lz0aovj1xcjacz7f.public.blob.vercel-storage.com/briefs/cmo12ltqg0000l704k50qz2ot/1776319618437.webp'],
+    locale: 'en',
+    type: 'website',
+  },
 };
 
 // Map headingFont to body class

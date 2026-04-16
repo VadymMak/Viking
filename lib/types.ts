@@ -30,6 +30,14 @@ export interface SiteConfig {
   headingFont: 'oswald' | 'playfair' | 'cormorant' | 'inter';
   whatsappNumber: string;
   contactEmail: string;
+  address?: string;
+  workingHours?: string;
+  socialInstagram?: string;
+  socialFacebook?: string;
+  heroStyle?: 'fullscreen' | 'split' | 'centered';
+  mood?: 'cozy' | 'professional' | 'elegant';
+  useLocalImages?: boolean;
+  logoUrl?: string;
 }
 
 // Navigation
